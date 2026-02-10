@@ -81,18 +81,15 @@ font-weight: 550;
 
 /* small device */
 @media screen and (max-width:576px){
-    nav ul,button{
-        visibility: hidden;
-    }
-    nav{
-        justify-content: space-evenly;
-        width: 500px;
+    nav ul li,nav button{
+        display: none;
+        
     }
     .hidden{
         display: block;
-        
-       
     }
-
+    header{
+        overflow: hidden;
+    }
 
 }
