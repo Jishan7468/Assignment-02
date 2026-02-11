@@ -21,8 +21,8 @@
    
     
 }
-header,.grid-card,.episode-container,.host{               /*display none*/
-    display: none;                          
+header,.grid-card,.episode-container,.host,.about,.star-section{               /*display none*/
+    /* display: none;                           */
 }
 
     /*  style */
@@ -56,6 +56,13 @@ nav ul a{
     line-height: 120%;
     font-size: 1rem;
 }
+
+nav ul li:hover{
+    background-color: #533C72;
+    border-radius: 5px;
+    
+    
+}
  hr{
     background-color: rgba(65, 37, 103, 1);
     height: 1px;
@@ -63,7 +70,7 @@ nav ul a{
     margin-top: 20px;
     
 } 
-nav span{
+nav span,footer span{
  background: var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(251, 9, 180, 1),rgba(145, 0, 248, 1)));
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
@@ -311,9 +318,7 @@ font-weight: 550;
     margin-top: 10px;
 }
 /* about section */
-.about{
-    padding-top: 100px;
-}
+
 .about-content{
     text-align: center;
 }
@@ -331,6 +336,68 @@ font-weight: 550;
     max-width: 700px;
     margin: 30px auto;
 }
+
+/* footer */
+footer{
+    background-color: #201041;
+    text-align: center;
+    background-image: url(../images/footer-bg.png);
+    min-height: 412px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+   
+    
+    
+}
+.footer-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+      min-height: 412px;
+}
+
+.footer-content{
+  
+    color: white;
+    max-width: 590px;
+    margin: 0 auto; 
+  
+    
+    
+}
+.footer-content p{
+    font-size: 1rem;
+    opacity: 60%;
+    line-height: 24px;
+    color: white;
+}
+.footer-content h1{
+    font-size: 4rem;
+}
+
+.icons-grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    place-items: center;
+    
+
+
+}
+.icons{
+    padding-bottom: 20px;
+
+}
+#margin{
+    margin-right: 30px;
+}
+#margin-right{
+    margin-left: 15px;
+}
+
+
+    
+
 /* small device */
 @media screen and (max-width:576px){
     nav ul li,nav button{
@@ -397,6 +464,22 @@ font-weight: 550;
   .star-section{
     padding-top: 50px;
   }
+ .icons-grid{
+    grid-template-columns: repeat(2,1fr);
+   
+    margin-top: 35px;
+    max-width: 300px;
+    
+    
+ }
+.icons{
+    
+   
+   
+
+}
+
+  
     
 
 }
