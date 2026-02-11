@@ -18,6 +18,7 @@
     max-width: 1150px;
     margin-left: auto;
     margin-right: auto;
+   
     
 }
 
@@ -83,11 +84,12 @@ font-weight: 550;
 .grid-card{
     text-align: center;
     background-color: rgba(35, 14, 61, 1);
+    display: none;
     
 
     
 }
-.grid-card h1{
+.grid-card h1,.episode-container h1{
     color: white;
     margin-bottom: 30px;
     font-size: 3rem;
@@ -134,9 +136,70 @@ font-weight: 550;
    
 }
 
+/* episodes */
+.episode-container{
+    background-color: #1A0B2E;
+    
+}
+.epi-content{
+    text-align: center;
+}
+.v-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    place-items: center;
+    gap: 15px;
+    text-align: left;
+    border-radius: 20px;
+}
 
+.v-grid div iframe{
+    
+  
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 100%;
 
+}
+.v-grid div{
+    background-color: #250D44;
+    border-radius: 20px;
+}
+.v-grid div > *{
+    margin-bottom:20px;
+}
+.v-grid h2{
+    font-size: 1.50rem;
+    font-weight: 800;
+    color: #ffffff;
+    padding-left: 20px;
 
+}
+.v-grid p{
+    opacity: 60%;
+    font-size: 1rem;
+    line-height: 24px;
+    color: #ffffff;
+    
+    padding-left: 20px;
+}
+.clock{
+    
+    
+
+}
+.clock p{
+    padding-left: 5px;
+    line-height: 24px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #00FF88;
+}
+.clock img{
+    margin-left: 20px;
+    width: 24px;
+    
+}
 
 /* small device */
 @media screen and (max-width:576px){
@@ -151,7 +214,7 @@ font-weight: 550;
     header{
         overflow: hidden;
     }
-    .grid-container{
+    .grid-container,.v-grid{
         grid-template-columns: repeat(1,1fr);
         grid-template-rows: repeat(1,1fr);
 
@@ -163,6 +226,10 @@ font-weight: 550;
         
     }
   .grid-card h1{
+    font-size: 2rem;
+    padding-top: 20px;
+  }
+  .epi-content h1{
     font-size: 2rem;
     padding-top: 20px;
   }
